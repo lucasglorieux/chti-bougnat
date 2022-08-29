@@ -6,7 +6,7 @@ import Promotions from '../components/Promotions'
 
 const Home = () => {
   return (
-    <div>
+    <div name='home'>
         <Navbar />
         <Hero />       
         <Promotions />

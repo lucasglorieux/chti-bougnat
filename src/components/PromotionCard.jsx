@@ -23,7 +23,7 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   margin: 5px;
-  min-width: 240px;
+  min-width: 200px;
   height: 280px;
   display: flex;
   align-items: center;
@@ -31,6 +31,7 @@ const Container = styled.div`
   position: relative;
   &:hover ${Info}{
     opacity: 1;
+    transform: scale(1.1);
   }
 `;
 const Image = styled.img`
@@ -40,8 +41,8 @@ const Image = styled.img`
 `;
 
 const Icon = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -57,31 +58,38 @@ const Icon = styled.div`
 
 const PromotionCard = ({item}) => {
   return (
+    <div className='border rounded-medium shadow-xl'>
     <Container>
       <div>
       <Image src={item.img} loading="eager" alt='/' className='hover:scale-105 duration-500'/>
       <div className=' absolute top-0 left-0 w-full h-full'>
        
       </div>
-      <div  className=' flex w-[95%] justify-between left-2 text-md text-black '>
+      <div className='mx-auto mt-2 text-center text-xl text-bold'>
         <p className='ml-2 '>
             {item.name}          
         </p>
+        </div>
+        <div className='mx-auto mt-2 text-center'>
         <p>         
             €{item.price}/Kg
         </p>
         </div>
         </div>
         <Info>
-        <Icon>
-          <a href='/product'><AiOutlineEye/></a>
-        </Icon>
-        
-        <Icon>
-          <a href='/basket'><BsCartPlus /></a>
-        </Icon>
+        <a href='/product'>
+          <Icon>
+            <AiOutlineEye/>
+          </Icon>
+        </a>
+        <a href='/basket'>
+          <Icon>
+            <BsCartPlus />
+          </Icon>
+        </a>
       </Info>
     </Container>
+    </div>
   );
 };
 

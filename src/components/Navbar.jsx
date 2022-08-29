@@ -63,7 +63,7 @@ const Navbar = () => {
                 <ul>
                     <h1>Le Ch'ti Bougnat</h1>
                     <li className='border-b hover:scale-105 duration-500 hover:text-yellow-400'><a href='/'>Home</a></li>
-                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'>
+                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                         <Link  to="promotion" smooth={true} offset={50} duration={500}>
                             Nos Promotions
                         </Link>

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Product from './pages/Product'
 import Basket from './pages/Basket';
 import MyAccount from './pages/MyAccount';
+import Footer from './components/Footer';
 
 
 
@@ -16,8 +17,8 @@ function App() {
         <Route exact path='/product' element={<Product/>} />
         <Route exact path='/basket' element={<Basket/>} />
         <Route exact path='/myaccount' element={<MyAccount/>} />
-
       </Routes>
+    <Footer />
     </>
   );
 }
