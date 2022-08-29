@@ -47,8 +47,8 @@ const Navbar = () => {
                 </Link>
             </li>
         </ul>
-        <div className='hidden md:flex'>
-            <a href='/myaccount'><BsPerson className='mr-5 hover:scale-110 duration-500 hover:text-[#f1c40f]' size={25}/></a>
+        <div className='hidden md:flex'><a href='/myaccount'><BsPerson className='mr-5 hover:scale-110 duration-500 hover:text-[#f1c40f]' size={25}/></a>
+            
             <a href='/basket'><BsCart className='mr-5 hover:scale-110 duration-500 hover:text-[#f1c40f]' size={25}/></a>
         </div>
        

@@ -1,10 +1,10 @@
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 
-import Home from './components/Home';
-import Product from './components/Product'
-import Basket from './components/Basket';
-import MyAccount from './components/MyAccount';
+import Home from './pages/Home';
+import Product from './pages/Product'
+import Basket from './pages/Basket';
+import MyAccount from './pages/MyAccount';
 
 
 

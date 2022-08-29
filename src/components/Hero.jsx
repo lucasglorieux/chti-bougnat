@@ -7,7 +7,7 @@ import Typed from 'react-typed';
 const Hero = () => {
   return (
     <div name="home" className='w-full h-screen relative'>
-        <img className='w-full h-full object-cover' src={Herobg} alt="Chaine des domes" />
+        <img className='w-full h-full object-cover' src={Herobg} loading="eager" alt="Chaine des domes" />
         <div className='absolute w-full h-full top-0 left-0 bg-gray-900/25'>
             <div className='absolute top-0 w-full h-full flex flex-col justify-center text-center text-white p-4'>
                 <div className='flex justify-center items-center'>
