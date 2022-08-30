@@ -36,7 +36,7 @@ const Promotions = () => {
       infinite: true,
       lazyLoad: true,
       speed: 300,
-      slidesToShow: 2,
+      slidesToShow: 3,
       centerMode: true,
       centerPadding: 0,
       nextArrow: <NextArrow />,

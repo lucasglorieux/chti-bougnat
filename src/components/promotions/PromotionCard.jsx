@@ -1,7 +1,8 @@
 import React from 'react';
 
 import {AiOutlineEye, AiOutlineHeart} from 'react-icons/ai';
-import {BsCartPlus} from 'react-icons/bs';
+import {HiOutlineShoppingBag} from 'react-icons/hi'
+
 
 import styled from "styled-components";
 
@@ -60,7 +61,7 @@ const Icon = styled.div`
 
 const PromotionCard = ({item}) => {
   return (
-    <div className='border rounded-lg shadow-xl hover:scale-110 duration-500 mr-6'>
+    <div className='border rounded-lg shadow-xl hover:scale-105 duration-500 mr-6'>
     <Container >
       <div>
       <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
@@ -86,7 +87,7 @@ const PromotionCard = ({item}) => {
         </a>
         <a href='/basket'>
           <Icon>
-            <BsCartPlus />
+            <HiOutlineShoppingBag />
           </Icon>
         </a>
         <a href="/">

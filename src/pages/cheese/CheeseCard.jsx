@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {AiOutlineEye, AiOutlineHeart} from 'react-icons/ai';
-import {BsCartPlus} from 'react-icons/bs';
+import {HiOutlineShoppingBag} from 'react-icons/hi'
 
 import styled from "styled-components";
 
@@ -85,7 +85,7 @@ const cheeseCard = ({item}) => {
             </a>
             <a href='/basket'>
               <Icon>
-                <BsCartPlus />
+                <HiOutlineShoppingBag />
               </Icon>
             </a>
             <a href="/">
