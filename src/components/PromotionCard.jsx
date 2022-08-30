@@ -34,9 +34,10 @@ const Container = styled.div`
     transform: scale(1.1);
   }
 `;
+
 const Image = styled.img`
-  height: 75%;
-  width:75%
+  height: 80%;
+  width: 80%
   z-index: 1;
 `;
 
@@ -61,7 +62,7 @@ const PromotionCard = ({item}) => {
     <div className='border rounded-medium shadow-xl'>
     <Container>
       <div>
-      <Image src={item.img} loading="eager" alt='/' className='hover:scale-105 duration-500'/>
+      <Image src={item.img} loading="eager" alt='/'/>
       <div className=' absolute top-0 left-0 w-full h-full'>
        
       </div>

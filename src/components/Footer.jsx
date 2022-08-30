@@ -4,7 +4,7 @@ import {Link} from 'react-scroll';
 
 const Footer = () => {
   return (
-    <div className='abolsute w-full bg-gray-100 py-16'>
+    <div className='absolute w-full bg-gray-100 py-16'>
         <div className='max-w-[1240px] mx-auto flex flex-col px-4'>
           <div className='sm:flex text-center justify-between items-center'>
             <h1>Le Ch'ti Boungat</h1>
