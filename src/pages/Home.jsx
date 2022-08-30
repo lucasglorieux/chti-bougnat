@@ -1,8 +1,8 @@
 import React from 'react'
-import Cheeses from '../components/Cheeses'
-import Hero from '../components/Hero'
-import Navbar from '../components/Navbar'
-import Promotions from '../components/Promotions'
+import Cheeses from '../components/cheeses/CheesesHome'
+import Hero from '../components/Hero + footer/Hero'
+import Navbar from '../components/navbar/Navbar'
+import Promotions from '../components/promotions/Promotions'
 
 const Home = () => {
   return (

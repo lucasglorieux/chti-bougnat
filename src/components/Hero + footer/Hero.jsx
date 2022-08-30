@@ -1,6 +1,6 @@
 import React from 'react'
-import { AiOutlineSearch } from 'react-icons/ai'
-import Herobg from '../assets/hero.jpg'
+import { AiOutlineMail, AiOutlinePhone, AiOutlineSearch } from 'react-icons/ai'
+import Herobg from '../../assets/hero.jpg'
 import Typed from 'react-typed';
 
 
@@ -28,6 +28,23 @@ const Hero = () => {
                     <div>
                         <button><AiOutlineSearch size={25} className='text-white' /></button>
                     </div>
+                    <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <ul>
+            <li className='w-[300px] h-[60px] flex justify-between items-center ml-[-240px] rounded-lg hover:ml-[-10px] duration-300 bg-[#f1c40f]'>
+                 <p className='flex justify-between items-center w-full text-white'>                  
+                    lechtibougnat@gmail.com
+                    <AiOutlineMail size={30}/>
+                 </p>
+            </li>
+            <li className='w-[200px] h-[60px] flex justify-between items-center ml-[-140px] rounded-lg hover:ml-[-10px] duration-300 bg-gray-600'>
+                 <p className='flex justify-between items-center w-full text-gray-300'>     
+                   06 82 31 48 70 
+                   <AiOutlinePhone size={30} className="text-white"/>
+                </p>
+            </li>
+    
+            </ul>
+        </div>
                 </form>
             </div>
         </div>

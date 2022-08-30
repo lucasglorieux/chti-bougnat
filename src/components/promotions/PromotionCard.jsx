@@ -1,6 +1,8 @@
-import React from 'react'
-import {AiOutlineEye} from 'react-icons/ai'
-import {BsCartPlus} from 'react-icons/bs'
+import React from 'react';
+
+import {AiOutlineEye, AiOutlineHeart} from 'react-icons/ai';
+import {BsCartPlus} from 'react-icons/bs';
+
 import styled from "styled-components";
 
 const Info = styled.div`
@@ -22,7 +24,6 @@ const Info = styled.div`
 
 const Container = styled.div`
   flex: 1;
-  margin: 5px;
   min-width: 200px;
   height: 280px;
   display: flex;
@@ -42,8 +43,8 @@ const Image = styled.img`
 `;
 
 const Icon = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: white;
   display: flex;
@@ -59,14 +60,14 @@ const Icon = styled.div`
 
 const PromotionCard = ({item}) => {
   return (
-    <div className='border rounded-medium shadow-xl'>
-    <Container>
+    <div className='border rounded-medium shadow-xl hover:scale-110 duration-500'>
+    <Container >
       <div>
       <Image src={item.img} loading="eager" alt='/'/>
       <div className=' absolute top-0 left-0 w-full h-full'>
        
       </div>
-      <div className='mx-auto mt-2 text-center text-xl text-bold'>
+      <div className='mx-auto mt-1 text-center text-xl text-bold'>
         <p className='ml-2 '>
             {item.name}          
         </p>
@@ -86,6 +87,11 @@ const PromotionCard = ({item}) => {
         <a href='/basket'>
           <Icon>
             <BsCartPlus />
+          </Icon>
+        </a>
+        <a href="/">
+          <Icon>
+            <AiOutlineHeart />
           </Icon>
         </a>
       </Info>

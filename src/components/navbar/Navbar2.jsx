@@ -30,9 +30,7 @@ const Navbar = () => {
                 <a href='/promotion'>Nos promotions</a>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                 <Link  to="cheese" smooth={true} offset={50} duration={500}>
-                    Nos Fromages
-                </Link>
+                 <a href='/cheese'>Nos Fromages </a>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                 <Link  to="meat" smooth={true} offset={50} duration={700}>
