@@ -28,7 +28,7 @@ const Hero = () => {
                     <div>
                         <button><AiOutlineSearch size={25} className='text-white' /></button>
                     </div>
-                    <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+                    <div className='hidden lg:flex absolute flex-col top-[35%] left-0'>
             <ul>
             <li className='w-[300px] h-[60px] flex justify-between items-center ml-[-240px] rounded-lg hover:ml-[-10px] duration-300 bg-[#f1c40f]'>
                  <p className='flex justify-between items-center w-full text-white'>                  

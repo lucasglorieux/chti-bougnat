@@ -15,14 +15,15 @@ const cheese = () => {
     <Navbar2 />
 
     {/* -------------------Section de recherche --------------------------- */}
-    <div  className='mx-auto py-24 px-10 text-center mb-30'>
-    <h1 name='cheese' className='mb-10'>Nos Fromages</h1>
+    <div  className='mx-auto py-24 px-10 text-center'>
+    <h1 name='cheese' className=''>Nos Fromages</h1>
     
-    <div className="grid sm:grid-cols-2 gap-8 py-4">
-    <form className='w-[80%]'>
+    <div className="grid sm:grid-cols-2 gap-8 py-4 border-2 border-transparent border-b-amber-400">
+    <form className='w-[60%] ml-5'>
                 <div className='flex flex-col my-2'>
-                    <label>Types de pâtes</label>
-                    <select className='border rounded-medium p-2'>
+                    <label className='text-xl text-bold'>Types de pâtes</label>
+                    <select  className='border rounded-medium p-2'>
+                        <option>-</option>
                         <option>Pâte pressée non-cuite</option>
                         <option>Pâte molle et croûte lavée</option>
                         <option>Pâte pressée cuite</option>
@@ -30,14 +31,16 @@ const cheese = () => {
                         <option>pâte fraîche</option>
                         <option>pâte molle et croûte fleurie </option>
                     </select>
-                    <label>Types de lait</label>
+                    <label className='text-xl text-bold'>Types de lait</label>
                     <select className='border rounded-medium p-2'>
+                        <option>-</option>
                         <option>lait de vache</option>
                         <option>Lait de chévre</option>
                         <option>Lait de brebis</option>
                     </select>
-                    <label>Traitement du lait</label>
+                    <label className='text-xl text-bold'>Traitement du lait</label>
                     <select className='border rounded-medium p-2'>
+                        <option>-</option>
                         <option>Lait cru</option>
                         <option>Lait thermisé</option>
                         <option>Lait pasteurisé</option>
@@ -55,7 +58,7 @@ const cheese = () => {
                 </form>
          </div>
         {/* ----------------------------Map des fromages ---------------- */}
-            <div className='max-w-[1400px] mx-auto px-4 py-1 grid sm:grid-cols-3 lg:grid-cols-4 gap-4'>
+            <div className='max-w-[1400px] mx-auto px-4 py-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
          {allCheeseProducts.map((item) => (
             <CheeseCard item={item} key={item.id} />
           ))}

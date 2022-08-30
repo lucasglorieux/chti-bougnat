@@ -60,10 +60,10 @@ const Icon = styled.div`
 
 const CheeseCard = ({item}) => {
   return (
-        <div className='border rounded-medium shadow-xl hover:scale-110 duration-500'>
+        <div className='border rounded-lg shadow-xl hover:scale-110 duration-500'>
         <Container>
           <div>
-          <Image src={item.img} loading="eager" alt='/'/>
+          <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
           <div className=' absolute top-0 left-0 w-full h-full'>
            
           </div>
@@ -72,7 +72,7 @@ const CheeseCard = ({item}) => {
                 {item.name}          
             </p>
             </div>
-            <div className='mx-auto mt-2 text-center'>
+            <div className='mx-auto mt-1 text-center'>
             <p>         
                 €{item.price}/Kg
             </p>

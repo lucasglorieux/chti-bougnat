@@ -18,7 +18,7 @@ const Navbar = () => {
         setLogo(!logo)
     }
   return (
-    <div className='absolute flex w-full justify-between items-center h-20  z-10 text-black'>
+    <div className='fixed bg-gray-200 flex w-full justify-between items-center h-20  z-10 text-black'>
         <div>
             <h1  onClick={handleNav} className={logo ? 'hidden' : 'block px-4'}>Le Ch'ti Bougnat</h1>
         </div>

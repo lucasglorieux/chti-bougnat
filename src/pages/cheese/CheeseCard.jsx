@@ -8,8 +8,7 @@ import styled from "styled-components";
 const Info = styled.div`
   opacity: 0;
   width: 100%;
-  height: 80%;
-  margin-top:20%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +24,7 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   min-width: 200px;
-  height: 280px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +36,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
-  width: 80%
+  height: 60%;
+  width: 60%
   z-index: 1;
 `;
 
@@ -60,10 +59,10 @@ const Icon = styled.div`
 
 const cheeseCard = ({item}) => {
   return (
-    <div className='border rounded-medium shadow-xl hover:scale-110 duration-500'>
+    <div className='border rounded-lg shadow-xl mt-40 mb-5 hover:scale-105 duration-500'>
         <Container>
           <div>
-          <Image src={item.img} loading="eager" alt='/'/>
+          <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
           <div className=' absolute top-0 left-0 w-full h-full'>
            
           </div>
@@ -72,7 +71,7 @@ const cheeseCard = ({item}) => {
                 {item.name}          
             </p>
             </div>
-            <div className='mx-auto mt-2 text-center'>
+            <div className='mx-auto mt-1 text-center'>
             <p>         
                 €{item.price}/Kg
             </p>
