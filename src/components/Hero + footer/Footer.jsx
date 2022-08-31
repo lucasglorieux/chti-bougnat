@@ -7,7 +7,7 @@ const Footer = () => {
     <div className=' w-full bg-gray-100 py-16'>
         <div className='max-w-[1240px] mx-auto flex flex-col px-4'>
           <div className='sm:flex text-center justify-between items-center'>
-            <h1>Le Ch'ti Boungat</h1>
+            <h1>Le Ch'ti Bougnat</h1>
             <div className='flex  w-full sm:max-w-[280px] my-4'>
                    <FaFacebook className='icon' />
                    <FaInstagram className='icon'/>
@@ -24,7 +24,7 @@ const Footer = () => {
             <ul className='text-right lg:flex'>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                 <Link to="home" smooth={true} offset={50} duration={500}>
-                    Acceuil
+                    Accueil
                 </Link>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                 <Link  to="/" smooth={true} offset={50} duration={500}>
-                Gallerie
+                Galerie
                 </Link>
             </li>
         </ul>

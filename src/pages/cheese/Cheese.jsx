@@ -6,11 +6,12 @@ import CheeseCard from "./CheeseCard"
 import Navbar2 from '../../components/navbar/Navbar2'
 
 import { AiOutlineSearch } from 'react-icons/ai'
+import AnimatedPage from '../../components/AnimatedPage';
 
 
 const cheese = () => {
   return (
-
+    <AnimatedPage>
     <div className='w-full h-screen relative'>
     <Navbar2 />
 
@@ -66,6 +67,7 @@ const cheese = () => {
     </div>
     
     </div>
+    </AnimatedPage>
   )
 }
 

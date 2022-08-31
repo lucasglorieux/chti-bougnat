@@ -13,7 +13,7 @@ const Cheeses = () => {
           ))}
             </div>
             <h2 className='mt-10 text-xl underline hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-              <a href="/cheese">Voire plus</a>
+              <a href="/cheese">Voir plus</a>
             </h2>
     </div>
   )

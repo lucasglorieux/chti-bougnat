@@ -61,7 +61,7 @@ const Icon = styled.div`
 
 const PromotionCard = ({item}) => {
   return (
-    <div className='border rounded-lg shadow-xl hover:scale-105 duration-500 mr-6'>
+    <div className='border rounded-lg shadow-xl hover:scale-105 mb-5 duration-500 mr-6'>
     <Container >
       <div>
       <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>

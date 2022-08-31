@@ -7,6 +7,8 @@ import {AiOutlineClose} from 'react-icons/ai'
 import {FaFacebook, FaInstagram} from 'react-icons/fa'
 import {Link} from 'react-scroll';
 
+import Logo from "../../assets/logo.png"
+
 
 
 const Navbar = () => {
@@ -19,7 +21,8 @@ const Navbar = () => {
     }
   return (
     <div className='fixed bg-gray-200 flex w-full justify-between items-center h-20  z-10 text-black'>
-        <div>
+        <div className='flex items-center h-20'>
+            <img className="h-20 w-20" src={Logo} alt="logo chti boungat"/>
             <h1  onClick={handleNav} className={logo ? 'hidden' : 'block px-4'}>Le Ch'ti Bougnat</h1>
         </div>
         <ul className='hidden md:flex'>
@@ -39,7 +42,7 @@ const Navbar = () => {
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                 <Link  to="gallerie" smooth={true} offset={50} duration={1000}>
-                Gallerie
+                Galerie
                 </Link>
             </li>
         </ul>
@@ -58,11 +61,11 @@ const Navbar = () => {
             <div onClick={handleNav} className={showNav ? 'absolute top-0 w-full  text-black bg-gray-100/90 px-4 py-7 flex flex-col' : 'absolute left-[-100%]'}>
                 <ul>
                     <h1>Le Ch'ti Bougnat</h1>
-                    <li className='border-b hover:scale-105 duration-500 hover:text-yellow-400'><a href='/'>Acceuil</a></li>
+                    <li className='border-b hover:scale-105 duration-500 hover:text-yellow-400'><a href='/'>Accueil</a></li>
                     <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Nos promotions</a></li>
                     <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Nos produits</a></li>
                     <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>A propos</a></li>
-                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Gallerie</a></li>
+                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Galerie</a></li>
                     <div className='flex flex-col'>
                         <button className='my-6 hover:scale-105 duration-500'>Chercher</button>
                         <button className='hover:scale-105 duration-500'>Mon compte</button>

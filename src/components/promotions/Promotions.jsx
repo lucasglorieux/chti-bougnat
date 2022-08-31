@@ -46,14 +46,17 @@ const Promotions = () => {
   
 
     return (
-      <div name='promotion' className="App">
-            <h1  name='promotion' className='mb-10 text-center'>Nos Promotions</h1>
+
+      <div  className="App">
+        <div name='promotion'></div>
+            <h1 className='mb-10 text-center'>Nos Promotions</h1>
             <Slider {...settings}>
               {promoProducts.map((item, idx) => (
                   <PromotionCard item={item} key={item.id} className={idx === imageIndex ? "slide activeSlide" : "slide"} />
                 ))}
            </Slider>
         </div>
+       
         
       )
 }
