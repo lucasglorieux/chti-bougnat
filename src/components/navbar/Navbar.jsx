@@ -36,7 +36,7 @@ const Navbar = () => {
                 </Link>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                 <Link  to="cheese" smooth={true}  duration={500}>
+                 <Link  to="cheese" smooth={true}  duration={800}>
                     Nos Fromages
                 </Link>
             </li>

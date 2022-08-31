@@ -26,7 +26,7 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   min-width: 200px;
-  height: 350px;
+  height: 330px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,14 +54,16 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
-    background-color: #f1c40f;
+    width: 50px;
+    height: 50px;
     transform: scale(1.1);
+    margin:15px;
   }
 `;
 
 const PromotionCard = ({item}) => {
   return (
-    <div className='border rounded-lg shadow-xl hover:scale-105 mb-5 duration-500 mr-6'>
+    <div className='border rounded-lg shadow-xl hover:scale-105 duration-500 mx-5 my-7 py-0.5'>
     <Container >
       <div>
       <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>

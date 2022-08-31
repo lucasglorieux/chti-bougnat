@@ -53,7 +53,10 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
-    background-color: #f1c40f;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    margin:15px;
     transform: scale(1.1);
   }
 `;

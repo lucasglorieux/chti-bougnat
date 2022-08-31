@@ -48,7 +48,7 @@ const Promotions = () => {
     return (
 
       <div  className="App">
-        <div name='promotion'></div>
+        <div className='' name='promotion'></div>
             <h1 className='mb-10 text-center'>Nos Promotions</h1>
             <Slider {...settings}>
               {promoProducts.map((item, idx) => (
