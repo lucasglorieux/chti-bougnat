@@ -58,6 +58,10 @@ const Icon = styled.div`
 `;
 
 const CheeseCard = ({item}) => {
+
+
+
+
   return (
         <div className='border rounded-lg shadow-xl hover:scale-110 duration-500'>
         <Container>
@@ -80,7 +84,7 @@ const CheeseCard = ({item}) => {
             <Info>
             <a href='/product'>
               <Icon>
-                <AiOutlineEye/>
+                <AiOutlineEye />
               </Icon>
             </a>
             <a href='/basket'>
