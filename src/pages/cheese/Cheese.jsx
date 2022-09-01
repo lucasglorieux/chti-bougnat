@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { allCheeseProducts } from "../../data";
+import { allCheeseProducts } from "../../dataCheese";
 
 import CheeseCard from "./CheeseCard"
 import Navbar2 from '../../components/navbar/Navbar2'

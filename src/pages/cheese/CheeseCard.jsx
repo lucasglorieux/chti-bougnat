@@ -37,7 +37,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   height: 60%;
-  width: 60%
+  width: 100%;
   z-index: 1;
 `;
 
@@ -59,9 +59,9 @@ const Icon = styled.div`
 
 const cheeseCard = ({item}) => {
   return (
-    <div className='border rounded-lg shadow-xl mt-40 mb-5 hover:scale-105 duration-500'>
+    <div className=' mt-40 mb-5 hover:scale-105 duration-500'>
         <Container>
-          <div>
+          <div className='border rounded-lg shadow-xl'>
           <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
           <div className=' absolute top-0 left-0 w-full h-full'>
            

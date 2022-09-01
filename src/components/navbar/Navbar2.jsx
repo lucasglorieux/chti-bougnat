@@ -36,9 +36,7 @@ const Navbar = () => {
                  <a href='/cheese'>Nos Fromages </a>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                <Link  to="meat" smooth={true} offset={50} duration={700}>
-                    Nos Salaisons
-                </Link>
+                <a href='/salaison'>Nos Salaisons </a>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
                 <Link  to="gallerie" smooth={true} offset={50} duration={1000}>

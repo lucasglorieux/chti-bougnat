@@ -54,10 +54,8 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
-    width: 50px;
-    height: 50px;
     transform: scale(1.1);
-    margin:15px;
+   
   }
 `;
 

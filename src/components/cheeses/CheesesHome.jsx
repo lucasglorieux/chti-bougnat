@@ -1,5 +1,5 @@
 import React from 'react'
-import { popularProducts } from "../../data";
+import { popularProducts } from "../../dataCheese";
 
 import CheeseHomeCard from "./CheeseHomeCard"
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {AiOutlineEye, AiOutlineHeart} from 'react-icons/ai';
 import {HiOutlineShoppingBag} from 'react-icons/hi'
@@ -8,8 +8,7 @@ import styled from "styled-components";
 const Info = styled.div`
   opacity: 0;
   width: 100%;
-  height: 80%;
-  margin-top:20%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +24,7 @@ const Info = styled.div`
 const Container = styled.div`
   flex: 1;
   min-width: 200px;
-  height: 280px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +36,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
-  width: 100%;
+  width: 51.571594877764845vh;
+  height: 34.342258440046564vh;
   z-index: 1;
 `;
 
@@ -53,15 +52,15 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
   &:hover {
+    background-color: #f1c40f;
     transform: scale(1.1);
   }
 `;
-
-const CheeseCard = ({item}) => {
+const SalaisonCard = ({item}) => {
   return (
-        <div className='border rounded-lg shadow-xl hover:scale-110 duration-500'>
+    <div className=' mt-40 mb-5 hover:scale-105 duration-500'>
         <Container>
-          <div>
+          <div className='border rounded-lg shadow-xl'>
           <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
           <div className=' absolute top-0 left-0 w-full h-full'>
            
@@ -99,4 +98,4 @@ const CheeseCard = ({item}) => {
   )
 }
 
-export default CheeseCard
+export default SalaisonCard

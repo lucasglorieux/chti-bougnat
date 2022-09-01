@@ -8,6 +8,7 @@ import Basket from './pages/Basket';
 import MyAccount from './pages/MyAccount';
 import Cheese from './pages/cheese/Cheese';
 import Footer from './components/Hero + footer/Footer';
+import Salaison from './pages/salaison/Salaison';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route exact path='/basket' element={<Basket/>} />
         <Route exact path='/myaccount' element={<MyAccount/>} />
         <Route exact path='/cheese' element={<Cheese />} />
+        <Route exact path='/salaison' element={<Salaison />} />
       </Routes>
     
       <Footer />

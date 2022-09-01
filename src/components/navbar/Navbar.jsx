@@ -31,17 +31,17 @@ const Navbar = () => {
                     <a href='/'>Accueil</a>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                <Link  to="promotion" smooth={true} offset={-5} duration={500}>
+                <Link  to="promotion" smooth={true} offset={-5} duration={900}>
                     Nos Promotions
                 </Link>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                 <Link  to="cheese" smooth={true}  duration={800}>
+                 <Link  to="cheese" smooth={true}  offset={-10} duration={1400}>
                     Nos Fromages
                 </Link>
             </li>
             <li className='hover:scale-110 duration-500 hover:text-[#f1c40f] cursor-pointer'>
-                <Link  to="meat" smooth={true} duration={700}>
+                <Link  to="salaison" smooth={true} duration={2000}>
                     Nos Salaisons
                 </Link>
             </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
                             Nos Promotions
                         </Link>
                     </li>
-                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Nos produits</a></li>
+                    <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Nos Fromages</a></li>
                     <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>A propos</a></li>
                     <li className='border-b hover:scale-105 duration-500 hover:text-[#f1c40f]'><a href='/'>Galerie</a></li>
                     <div className='flex flex-col'>

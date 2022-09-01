@@ -5,7 +5,7 @@ import Slider from "react-slick";
 
 import PromotionCard from './PromotionCard'
 
-import { promoProducts } from "../../data";
+import { promoProducts } from "../../dataCheese";
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 

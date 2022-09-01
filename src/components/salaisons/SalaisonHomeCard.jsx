@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import {AiOutlineEye, AiOutlineHeart} from 'react-icons/ai';
 import {HiOutlineShoppingBag} from 'react-icons/hi'
@@ -13,7 +13,6 @@ const Info = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  
   z-index: 3;
   display: flex;
   align-items: center;
@@ -37,8 +36,8 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
-  width: 100%;
+  height: 26.30966239813737vh;
+  width: 38.41676367869616vh;
   z-index: 1;
 `;
 
@@ -57,9 +56,11 @@ const Icon = styled.div`
   }
 `;
 
-const CheeseCard = ({item}) => {
+const SalaisonHomeCard = ({item}) => {
+
   return (
-        <div className='border rounded-lg shadow-xl hover:scale-110 duration-500'>
+    <div>
+        <div className='border rounded-lg shadow-xl my-7 hover:scale-110 duration-500'>
         <Container>
           <div>
           <Image className='rounded-lg' src={item.img} loading="eager" alt='/'/>
@@ -96,7 +97,8 @@ const CheeseCard = ({item}) => {
           </Info>
         </Container>
         </div>
+    </div>
   )
 }
 
-export default CheeseCard
+export default SalaisonHomeCard
